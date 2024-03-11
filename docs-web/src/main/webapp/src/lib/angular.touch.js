@@ -459,9 +459,9 @@
           lastLabelClickCoordinates = null;
         }
         // remember label click coordinates to prevent click busting of trigger click event on input
-        if (nodeName_(event.target) === 'label') {
-          lastLabelClickCoordinates = [x, y];
-        }
+        // if (nodeName_(event.target) === 'label') {
+        //   lastLabelClickCoordinates = [x, y];
+        // }
 
         // Look for an allowable region containing this click.
         // If we find one, that means it was created by touchstart and not removed by
