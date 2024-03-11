@@ -31,7 +31,7 @@ public class UserResource extends BaseResource {
                         .add("username", username)
                         .add("password", password)
                         .add("code", code)
-                        .add("remember", "true")
+                        // .add("remember", "true")
                         .build())
                 .build();
         OkHttpUtil.buildClient(context)
