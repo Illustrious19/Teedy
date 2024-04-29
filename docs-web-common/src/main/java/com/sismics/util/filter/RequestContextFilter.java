@@ -31,6 +31,10 @@ public class RequestContextFilter implements Filter {
      * Logger.
      */
     private static final Logger log = LoggerFactory.getLogger(RequestContextFilter.class);
+    public  RequestContextFilter(){
+        int a=0;
+        int b=0;
+    }
 
     @Override
     public void init(FilterConfig filterConfig) {

@@ -5,6 +5,7 @@ import com.sismics.util.filter.HeaderBasedSecurityFilter;
 import com.sismics.util.filter.RequestContextFilter;
 import com.sismics.util.filter.TokenBasedSecurityFilter;
 import org.glassfish.grizzly.http.server.HttpServer;
+import org.glassfish.grizzly.servlet.FilterConfigImpl;
 import org.glassfish.grizzly.servlet.ServletRegistration;
 import org.glassfish.grizzly.servlet.WebappContext;
 import org.glassfish.jersey.servlet.ServletContainer;
@@ -20,6 +21,7 @@ import org.subethamail.wiser.WiserMessage;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
+import javax.servlet.FilterConfig;
 import javax.ws.rs.core.Application;
 import javax.ws.rs.core.UriBuilder;
 import java.io.ByteArrayOutputStream;
@@ -142,5 +144,6 @@ public abstract class BaseJerseyTest extends JerseyTest {
         if (httpServer != null) {
             httpServer.shutdownNow();
         }
+
     }
 }

@@ -1,0 +1,1 @@
+pmd.bat check -d c:\Users\Public\Desktop\Teedy -R rulesets/java/quickstart.xml -f text

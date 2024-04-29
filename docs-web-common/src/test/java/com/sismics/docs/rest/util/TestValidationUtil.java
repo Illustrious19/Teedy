@@ -1,6 +1,8 @@
 package com.sismics.docs.rest.util;
 
 import com.sismics.rest.exception.ClientException;
+import com.sismics.rest.exception.ForbiddenClientException;
+import com.sismics.rest.exception.ServerException;
 import com.sismics.rest.util.ValidationUtil;
 import org.junit.Assert;
 import org.junit.Test;
@@ -20,7 +22,7 @@ public class TestValidationUtil {
             ValidationUtil.validateHttpUrl("ftp://www.google.com", "url");
             Assert.fail();
         } catch (ClientException e) {
-            // NOP
+            e.toString();
         }
         try {
             ValidationUtil.validateHttpUrl("http://", "url");

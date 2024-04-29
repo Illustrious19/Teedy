@@ -47,4 +47,9 @@ public class ClientException extends WebApplicationException {
             .add("type", type)
             .add("message", message).build()).build());
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }
