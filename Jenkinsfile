@@ -8,7 +8,7 @@ pipeline {
     }
     stage('K8s') {
       steps {
-        sh 'kubectl set image deployments/hello-node docs=docs:1.0'
+        sh 'kubectl set image deployments/hello-node docs=beifang12138/teedy2024_manual:latest'
       }
     }
   }
